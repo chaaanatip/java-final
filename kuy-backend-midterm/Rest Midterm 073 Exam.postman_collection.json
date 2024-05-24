@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "c4a84c67-1ac1-40cc-b197-3d38da984fa8",
+		"name": "Rest Midterm 073 Exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20749159"
+	},
+	"item": [
+		{
+			"name": "/suppliers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/073/suppliers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"073",
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/suppliers/{supplierId}/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/073/suppliers/75/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"073",
+						"suppliers",
+						"75",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/suppliers/{supplierId}/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 9999,\n    \"productName\": \"Test\",\n    \"unitPrice\": 200,\n    \"packageField\": \"test\",\n    \"discontinued\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/073/suppliers/1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"073",
+						"suppliers",
+						"1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
